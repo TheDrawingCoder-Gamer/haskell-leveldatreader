@@ -1,0 +1,45 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           leveldatreader
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/githubuser/leveldatreader#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2022 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+executable leveldatreader
+  main-is: Main.hs
+  other-modules:
+      Bulby.DatReader.BlockModel
+      Bulby.DatReader.NBTData
+      Bulby.DatReader.Region
+      Paths_leveldatreader
+  hs-source-dirs:
+      src
+  ghc-options: -XImportQualifiedPost
+  build-depends:
+      MissingH
+    , aeson
+    , base >=4.7 && <5
+    , binary
+    , bytestring
+    , containers
+    , hashable
+    , megaparsec
+    , scientific
+    , text
+    , unordered-containers
+    , vector
+    , zlib
+  default-language: Haskell2010

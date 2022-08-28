@@ -1,0 +1,6 @@
+*.dat
+*.dat.*
+*.mca
+*.mca.*
+out.txt
+.stack-work

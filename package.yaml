@@ -1,0 +1,33 @@
+name:                leveldatreader
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/githubuser/leveldatreader#readme
+license:             BSD3
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2022 Author name here
+category:            Web
+extra-source-files:
+- README.md
+- CHANGELOG.md
+ghc-options: 
+  - -XImportQualifiedPost
+dependencies:
+  - base >= 4.7 && < 5
+  - bytestring
+  - binary
+  - text
+  - containers
+  - unordered-containers
+  - hashable
+  - aeson
+  - scientific
+  - MissingH
+  - megaparsec
+  - zlib
+  - vector
+executables:
+  leveldatreader:
+    source-dirs:      src
+    main:             Main.hs
